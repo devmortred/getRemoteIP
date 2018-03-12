@@ -17,7 +17,7 @@ public class IPController {
 
     @RequestMapping("/getip")
     public @ResponseBody
-    IpDTO getIP(HttpServletRequest request, HttpServletResponse response) {
+    IpDTO getIP(HttpServletRequest request) {
 
         remoteAddr = request.getRemoteAddr();
         remoteHost = request.getRemoteHost();
