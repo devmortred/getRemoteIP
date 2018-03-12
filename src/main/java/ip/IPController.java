@@ -5,14 +5,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 
 @RestController
 public class IPController {
 
-    @RequestMapping("/getip")
+    @RequestMapping("/get")
     public @ResponseBody
-    IpDTO getIpJSON(HttpServletRequest request) {
+    IpDTO getIpJSON(HttpServletRequest request, HttpServletResponse response) {
 
         String remoteAddr = request.getRemoteAddr();
         String remoteHost = request.getRemoteHost();
