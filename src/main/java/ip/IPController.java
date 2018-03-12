@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 public class IPController {
 
-    @RequestMapping("/get")
+    @RequestMapping("/getip")
     public @ResponseBody
     IpDTO getIpJSON(HttpServletRequest request) {
 
