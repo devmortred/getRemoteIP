@@ -5,6 +5,23 @@ public class IpDTO {
     private String remoteAddr;
     private String remoteHost;
     private int remotePort;
+
+    public String getRemoteAddr() {
+        return remoteAddr;
+    }
+
+    public String getRemoteHost() {
+        return remoteHost;
+    }
+
+    public int getRemotePort() {
+        return remotePort;
+    }
+
+    public String getRemoteUser() {
+        return remoteUser;
+    }
+
     private String remoteUser;
 
     public void setRemoteAddr(String remoteAddr) {

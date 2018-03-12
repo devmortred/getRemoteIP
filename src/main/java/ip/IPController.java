@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 @RestController
 public class IPController {
 
-    @RequestMapping("/get")
+    @RequestMapping("/getip")
     public @ResponseBody
     IpDTO getIpJSON(HttpServletRequest request, HttpServletResponse response) {
 
