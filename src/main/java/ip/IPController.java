@@ -13,11 +13,11 @@ public class IPController {
 
     private String remoteAddr, remoteHost, remoteUser;
     private int remotePort;
-    private IpDTO ipDTO = new IpDTO();
+    private IpModel ipModel = new IpModel();
 
     @RequestMapping("/getip")
     public @ResponseBody
-    IpDTO getIP(HttpServletRequest request) {
+    IpModel getIP(HttpServletRequest request) {
 
         remoteAddr = request.getRemoteAddr();
         remoteHost = request.getRemoteHost();
@@ -29,6 +29,6 @@ public class IPController {
         ipDTO.setRemoteHost(remoteHost);
         ipDTO.setRemoteUser(remoteUser);
 
-        return ipDTO;
+        return ipModel;
     }
 }
