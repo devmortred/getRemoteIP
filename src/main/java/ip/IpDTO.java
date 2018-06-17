@@ -1,6 +1,6 @@
 package ip;
 
-public class IpDTO {
+public class IpModel {
 
     private String remoteAddr, remoteHost, remoteUser;
     private int remotePort;
